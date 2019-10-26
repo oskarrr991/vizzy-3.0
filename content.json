@@ -1,0 +1,302 @@
+{
+    "type": "div",
+    "className": "container",
+    "content": 
+    [{
+        "type": "div",
+        "id": "background"
+    },
+    {
+        "type": "img",
+        "id": "back",
+        "src": "./images/back_img.png"
+    },
+    {
+        "type": "header",
+        "content": 
+            [{
+                "type": "div",
+                "className": "logo",
+                "content":
+                [{
+                    "type": "img",
+                    "alt": "logo",
+                    "src": "images/logo.png"
+                }]
+            },
+            {
+                "type": "div",
+                "id": "reg_btn",
+                "content": 
+                    [{
+                        "type": "span",
+                        "innerHTML": "SIGN IN"
+                    },
+                    {
+                        "type": "button",
+                        "id": "sign_up",
+                        "innerHTML": "SIGN UP"
+                    }] 
+            },
+            {
+                "type": "nav",
+                "className": "desktop",
+                "id": "menu-container",
+                "content": 
+                    [{
+                    "type": "ul",
+                    "id": "menu",
+                        "content": 
+                            [{
+                                "type": "li",
+                                "content": [{
+                                    "type": "a",
+                                    "id": "homelink",
+                                    "href": "#Home",
+                                    "innerHTML": "Home"
+                                }]
+                            },
+                            {
+                                "type": "li",
+                                "content": [{
+                                    "type": "a",
+                                    "id": "productlink",
+                                    "href": "#Products",
+                                    "innerHTML": "Products"
+                                }]
+                            },
+                            {
+                                "type": "li",
+                                "content": [{
+                                    "type": "a",
+                                    "id": "templateslink",
+                                    "href": "#Templates",
+                                    "innerHTML": "Templates"
+                                }]
+                            },
+                            {
+                                "type": "li",
+                                "content": [{
+                                    "type": "a",
+                                    "id": "pricinglink",
+                                    "href": "#Pricing",
+                                    "innerHTML": "Pricing"
+                                }]
+                            }]
+                    }]
+            },
+            {
+                "type": "nav",
+                "className": "mobile-menu",
+                "content": 
+                [{
+                        "type": "label",
+                        "innerHTML": "MENU",
+                        "onclick": "menu-button"
+                    },
+                    {
+                        "type": "ul",
+                        "id": "mobile-menu-items",
+                        "content": 
+                            [{
+                                "type": "li",
+                                "content": [{
+                                    "type": "a",
+                                    "href": "#Home",
+                                    "innerHTML": "Home"
+                                }]
+                            },
+                            {
+                                "type": "li",
+                                "content": [{
+                                    "type": "a",
+                                    "href": "#Products",
+                                    "innerHTML": "Products"
+                                }]
+                            },
+                            {
+                                "type": "li",
+                                "content": [{
+                                    "type": "a",
+                                    "href": "#Templates",
+                                    "innerHTML": "Templates"
+                                }]
+                            },
+                            {
+                                "type": "li",
+                                "content": [{
+                                    "type": "a",
+                                    "href": "#Pricing",
+                                    "innerHTML": "Pricing"
+                                }]
+                            }]
+                }]
+            }]
+    },
+    {
+        "type": "section",
+        "id": "Home",
+        "content":
+        [{
+            "type": "div",
+            "id": "slider",
+            "content":
+            [{
+                "type": "div",
+                "id": "slider-content",
+                "content":
+                [{
+                    "type": "article",
+                    "className": "mySlides",
+                    "content":
+                    [{
+                        "type": "span",
+                        "id": "slider_title",
+                        "innerHTML": "Create Stunning <br> Virtual Media"
+                    },
+                    {
+                        "type": "p",
+                        "innerHTML": "Super simple tool to create trendy videos and pictures <br> for your ads, social media, blogs and website <br> Make your project stand out!"
+                    }]
+            },
+            {
+                    "type": "article",
+                    "className": "mySlides",
+                    "content":
+                    [{
+                        "type": "span",
+                        "id": "slider_title",
+                        "innerHTML": "Lorem Ipsum <br> Virtual Media"
+                    },
+                    {
+                        "type": "p",
+                        "innerHTML": "Dummy text ever since the 1500s, when an unknown <br>printermtook a galley of type and scrambled<br> it to make a type specimen book."
+                    }]
+            },
+            {
+                    "type": "article",
+                    "className": "mySlides",
+                    "content":
+                    [{
+                        "type": "span",
+                        "id": "slider_title",
+                        "innerHTML": "Ipsum Lorem <br> Lorem Media"
+                    },
+                    {
+                        "type": "p",
+                        "innerHTML": "Create trendy videos has been the industrys standard <br>dummy text It has survived not, when <br>an unknown printer took a text of  "
+                    }]
+            },
+            {
+                    "type": "article",
+                    "className": "mySlides",
+                    "content":
+                    [{
+                        "type": "span",
+                        "id": "slider_title",
+                        "innerHTML": "Media Ipsum <br> Virtual Ipsum"
+                    },
+                    {
+                        "type": "p",
+                        "innerHTML": "Lorem Ipsum the 1500s, when an unknown standard <br>dummy text ever since the 1500s, when an unknown <br>printer took a create trendy  "
+                    }]
+            }]
+            },
+            {
+                "type": "div",
+                "id": "Design_btn",
+                "content":
+                [{
+                    "type": "button",
+                    "id": "design_btn_content",
+                    "innerHTML": "CREATE DESIGN &#8594"
+                }]
+            },
+            {
+                "type": "div",
+                "id": "buttons",
+                "content":
+                [{
+                    "type": "button",
+                    "id": "sliderbutton1",
+                    "className": "slider_btn"
+                },
+                {
+                    "type": "button",
+                    "id": "sliderbutton2",
+                    "className": "slider_btn"
+                },
+                {
+                    "type": "button",
+                    "id": "sliderbutton3",
+                    "className": "slider_btn"
+                },
+                {
+                    "type": "button",
+                    "id": "sliderbutton4",
+                    "className": "slider_btn"
+                }]
+            }]  
+        }] 
+    },
+    {
+        "type": "section",
+        "id": "Products",
+        "className": "other",
+            "content":
+            [{
+                "type": "div",
+                "innerHTML": "Hello World!"
+            },
+            {
+                "type": "div",
+                "class": "other_design",
+                "content":
+                [{
+                    "type": "button",
+                    "id": "design_btn_content",
+                    "innerHTML": "DESTROY DESIGN &#10006"
+                }]
+            }]
+    },
+    {
+        "type": "section",
+        "id": "Templates",
+        "className": "other",
+            "content":
+            [{
+                "type": "div",
+                "innerHTML": "Good Bye World!"
+            },
+            {
+                "type": "div",
+                "class": "other_design",
+                "content":
+                [{
+                    "type": "button",
+                    "id": "design_btn_content",
+                    "innerHTML": "FIX DESIGN &#10004"
+                }]
+            }]
+    },
+    {
+        "type": "section",
+        "id": "Pricing",
+        "className": "other",
+            "content":
+            [{
+                "type": "div",
+                "innerHTML": "I love you world!"
+            },
+            {
+                "type": "div",
+                "class": "other_design",
+                "content":
+                [{
+                    "type": "button",
+                    "id": "design_btn_content",
+                    "innerHTML": "RECYCLE DESIGN &#10138"
+                }]
+            }]
+    }]
+}

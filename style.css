@@ -1,0 +1,453 @@
+ body {
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    font-family: 'Roboto';
+    color: white;
+    width: 70vw;
+    max-width: 1000px;
+    margin: auto;
+    background-color: #113dcb;
+}
+#back {
+    position: absolute;
+    left: 37%;
+    height: 800px;
+    top: 13%;
+}
+#background {
+    margin:  0% 0% 0% 35%;
+    padding: 0px;
+    top: 20%;
+    left: -31.5%;
+    width: 150%;
+    height: 150%;
+    background: #d82b32;
+    -webkit-transform: rotate(-53deg);
+            transform: rotate(-53deg);
+    position: fixed;
+    z-index: -1;
+}
+/* -------------------------------------------DESKTOP MENU------------------------------------------------ */
+header {
+    height: 37px;
+    padding-top: 20px;
+}
+header > .logo {
+    float: left;
+    cursor: pointer;
+}
+nav {
+    float: left;
+    margin: 0 20px;
+}
+.desktop > ul > li {
+    display: inline;
+    padding: 0 1vw;
+    font-size: .9em;
+}
+nav > ul > li > a {
+    line-height: 37px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+nav > ul > li > a:focus {
+    border-bottom: 3px solid white;
+}
+nav > ul {
+    margin: 0;
+    padding: 0;
+}
+/* -------------------------------------MOBILE MENU------------------------------------------------------ */
+.mobile-menu > label {
+    border: 3px solid;
+    padding: 10px;
+    font-family: calibri;
+    display: block;
+    width: 76px;
+    text-align: center;
+    opacity: 1; 
+    font-weight: bold;
+    position: fixed;
+    left: 77%;
+}
+.mobile-menu > label:hover  {
+    background-color: white;
+    color: #113dcb;
+    cursor: pointer;
+}
+.mobile-menu > ul > li > a {
+
+    text-decoration: none;
+    color: #113dcb;
+    font-size: 13px;
+}
+.mobile-menu > ul > li {
+    display: block;
+    text-align: center;
+}
+.mobile-menu {
+    display: none;
+    top: 3%;
+    left: 5%;
+    position: fixed;
+    z-index: 1;
+} 
+#mobile-menu-items {
+    position: fixed;
+    display: none;
+    background-color: white;
+    width: 96px;
+    margin-left: 70.3%;
+    margin-top: 44px;
+}
+/* ----------------------------------------SIGN IN/UP------------------------------------------------------ */
+#reg_btn {
+    position: fixed;
+    left: 63%;
+    top: 1.5%;
+} 
+#reg_btn > span {
+    cursor: pointer;
+}
+#sign_up {
+    display: inline-block;
+    border-radius: 10px;
+    background-color: white;
+    border: none;
+    color: #113dcb;
+    text-align: center;
+    font-size: 12px;
+    padding: 18px;
+    width: 130px;
+    cursor: pointer;
+    margin: 5px;
+    font-weight: bold;
+}
+/* --------------------------------------MAIN CONTENT------------------------------------------------- */
+.mySlides {
+    margin: 10% 0% 0% 0%;
+    width: 100%;
+} 
+.slider-content {
+    max-width: 600px;
+} 
+#slider_title {
+    font-size: 70px;
+    font-weight: bold;
+}
+.slider_btn {
+    height: 22px;
+    width: 22px;
+    background-color: #4478ff;
+    border-radius: 100%;
+    display: inline-block;
+    border: none;
+    margin: 10px;
+    cursor: pointer; 
+    border: 3px solid rgb(25, 63, 207);
+
+}
+.slider_btn:focus {
+    border: 3px solid #ffb600;
+    outline: none;
+}
+#buttons {
+    position: relative;
+    padding-top: 20%;
+}
+#Design_btn, .other_design {
+    position: relative;
+    margin-top: 10%;
+}
+#design_btn_content {
+    display: inline-block;
+    border-radius: 10px;
+    background-color: #ff5969;
+    border: none;
+    color: white;
+    text-align: center;
+    font-size: 12px;
+    padding: 18px;
+    width: 160px;
+    cursor: pointer;
+    margin: 5px;
+    font-weight: bold;
+}
+.other {
+    margin-top: 10%;
+}
+.other > div {
+    font-size: 30px;
+}
+@media only screen and (max-width: 1650px) {
+    #background{
+        margin: 0% 0% 0% 40% !important;
+    }
+    #back{
+        height: 700px !important; 
+    }
+}
+@media only screen and (max-width: 1500px) {
+    #reg_btn {
+        left: 65% !important;
+    }
+}
+@media only screen and (max-width: 1300px) {
+    #background
+    {
+        margin:  0% 0% 0% 45% !important;
+    }
+}
+@media only screen and (max-width: 1200px) {
+    #menu-items{
+        position: relative !important;
+        line-height: 80px !important;
+        margin: 0% 0% 0% 25% !important;
+    }
+    #back{
+        height: 630px !important;
+        left: 40% !important;
+    }
+    #reg_btn {
+        left: 70% !important;
+    }
+    #background {
+        margin:  0% 0% 0% 55% !important;
+    }
+    #slider, .logo{
+        margin-left: 30px  !important;
+    }
+}
+@media only screen and (max-width: 1024px) {
+    .desktop {
+        display: none !important;
+    }
+    .mobile-menu {
+        display: block !important;
+    }
+    .logo {
+        display: none;
+    }
+    #reg_btn {
+        top: 2% !important;
+        left: 8% !important;
+    } 
+}
+@media only screen and (max-height: 1366px) and (max-width:1024px) {
+    #background{
+        margin: -25% 0% 0% 80% !important;    
+        transform: rotate(-64deg) !important;
+        width: 170% !important;
+    }
+
+    #slider{
+        margin-left: -80px  !important;
+    }
+}
+@media only screen and (max-height: 1024px) and (max-width:768px) {
+    #back{
+        height: 700px !important; 
+        width: 600px !important; 
+        margin-left: -250px  !important;
+        margin-top: 70% !important;
+        margin-bottom: 2% !important;
+    }
+    #slider{
+        margin-left: -80px  !important;
+    }
+    .logo{
+        position: fixed !important;
+    }
+    #slider{
+        margin-left: 0px  !important;
+    }
+    .mySlides{
+        text-align: center;
+    }
+    #buttons
+    {
+        margin-left: 32%;
+    }
+    .other > div {
+        text-align: center;
+    }
+    #Design_btn
+    {
+        margin-left: 32%;
+    }
+    .logo{
+        margin-left: 50px !important;
+        margin-top: 18px !important;
+    }
+    #background{
+        margin: -25% 0% 0% 80% !important;    
+
+    }
+    .other_design {
+        left: -50%;
+    }
+}
+@media only screen and (max-width:715px) {
+
+    #reg_btn
+    {
+        position: fixed;
+        top: 1.5%;
+    } 
+    .logo{
+        margin-left: 70px !important;
+        margin-top: 18px !important;
+    }
+    #background{
+        width: 200% !important;
+    }
+    #back{
+        margin-top: 80% !important;
+
+    }
+}
+@media only screen and (max-width:591px) {
+    #slider_title{
+        font-size: 55px;
+    }
+    .mySlides{
+        margin-top: 20%;
+    }
+    #back{
+        margin-top: 100% !important;
+
+    }
+    .logo{
+        display: none;
+    }
+    #background{
+        margin-top: -20% !important;
+        margin-left: 90% !important;
+    }
+    #mobile-menu-items {
+        margin-left: 62.5%;
+    }
+    .mobile-menu > label {
+        left: 70%;
+    }
+}
+@media only screen and (max-width:545px) {
+    #background{
+        width: 250% !important;
+        margin-left: 66% !important;
+    }
+}
+@media only screen and (max-width:500px) {
+    .mySlides{
+        margin-left: 5%;
+    }
+    #back{
+        height: 400px !important; 
+        width: 400px !important; 
+        margin-left: -150px  !important;
+    }
+    #slider_title{
+        font-size: 45px;
+    }
+    #Design_btn{
+        top: 45%;
+    }
+    #buttons
+    {
+        margin-bottom: 50%;
+    }
+    #sign_up
+    {
+        width: 100px;
+    } 
+    #background{
+        margin-left: 100% !important;
+        transform: rotate(-70deg) !important;
+        margin-top: -50% !important;
+    }
+    .mobile-menu > label {
+        left: 72%;
+    }
+}
+@media only screen and (max-width:430px) {
+    #back{
+        height: 300px !important; 
+        width: 300px !important; 
+        margin-left: -110px  !important;
+        margin-top: 110% !important;
+    }
+    #buttons{
+        margin-bottom: 60%;
+    }
+    #background{
+        margin-left: 110% !important;
+        transform: rotate(-75deg) !important;
+        margin-top: -60% !important;
+    }
+    #reg_btn {
+        left: 10% !important;
+    }
+}
+@media only screen and (max-height:960px) and (max-width:400px){
+    #back{
+        height: 300px !important; 
+        width: 300px !important; 
+        margin-left: -110px  !important; 
+        margin-top: 150% !important;
+    }
+    #Design_btn{
+        margin-left: 22%;
+    }
+    #buttons
+    {
+        margin-left: 22%;
+    }
+}
+@media only screen and (max-height:740px) {
+    #Design_btn {
+        margin-left: 25%;
+        margin-bottom: -10%;
+    }
+    #buttons {
+        margin-left: 25%;
+    }
+}
+@media only screen and (max-height:730px) {
+    #back{
+        margin-top: 150% !important;
+    }
+}
+@media only screen and (max-height:600px) {
+    #back{
+        margin-top: 180% !important;
+    }
+    #buttons
+    {
+        margin-left: 25%;
+    }
+    #Design_btn
+    {
+        margin-left: 20%;
+    }
+    #sign_up{
+        width: 90px;
+    }
+    
+}
+@media only screen and (max-width:350px) {
+    .mobile-menu > label {
+        left: 60%;
+    }
+    #buttons {
+        margin-left: 16%;
+    }
+    #Design_btn {
+        margin-left: 17%;
+    }
+    #mobile-menu-items {
+        left: -1.5%;
+    }
+} 
